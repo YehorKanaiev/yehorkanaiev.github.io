@@ -95,6 +95,12 @@ body {
     flex-wrap: wrap;
 }
 
+.portfolio__title {
+    color: #ffffff;
+    font-size: 40px;
+    padding: 2% 0 0 2%;
+}
+
 .portfolio__item {
     width: 25%;
     box-sizing: border-box;

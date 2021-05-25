@@ -10,7 +10,6 @@
 @media (max-width: 1199px) {
     .portfolio__item {
         width: 33%;
-        padding: 2% 2%;
     }
 }
 
@@ -44,6 +43,10 @@
 /* ====================== width 640 - 767 ===================== */
 
 @media (max-width: 767px) {
+    .portfolio__title {
+        padding: 2% 0 0 5%;
+    }
+
     .portfolio__item {
         width: 50%;
         padding: 3% 4%;
@@ -82,6 +85,11 @@
         padding: 15px 0;
     }
 
+    .portfolio__title {
+        padding: 2% 0 0 0;
+        text-align: center;
+    }
+    
     .item__title {
         font-size: 24px;
         line-height: 24px;
