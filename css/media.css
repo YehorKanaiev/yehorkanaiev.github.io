@@ -1,0 +1,90 @@
+/* ====================== width > 1920 ===================== */
+@media (min-width: 1921px) {
+    .container {
+        width: 1920px;
+        margin: 0 auto;
+    }
+}
+
+/* ====================== width 1024 - 1199 ===================== */
+@media (max-width: 1199px) {
+    .portfolio__item {
+        width: 33%;
+        padding: 2% 2%;
+    }
+}
+
+/* ====================== width 768 - 1023 ===================== */
+
+@media (max-width: 1023px) {
+    .header__title h1 {
+        font-size: 50px;
+    }
+
+    .header__title h2 {
+        font-size: 22px;
+    }
+
+    .header__icons {
+        border-color: #ffffff;
+        padding: 5px 20px;
+    }
+
+    .header__icons img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .item__title {
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
+/* ====================== width 640 - 767 ===================== */
+
+@media (max-width: 767px) {
+    .portfolio__item {
+        width: 50%;
+        padding: 3% 4%;
+    }
+}
+
+/* ====================== max width 480 - 639 ===================== */
+
+@media (max-width: 639px) {
+    .portfolio__item {
+        width: 100%;
+        padding: 5% 5%;
+    }
+}
+
+/* ====================== max width 320 - 479 ===================== */
+
+@media (max-width: 479px) {
+
+    .header {
+        background: rgba(95,69,187,1);
+        flex: 0 0 auto;
+    }
+
+    .header__container {
+        flex-direction: column;
+    }
+
+    .header__photo-of-user {
+        width: 250px;
+        height: 250px;
+    }
+
+    .header__content {
+        flex: 1 1 auto;
+        padding: 15px 0;
+    }
+
+    .item__title {
+        font-size: 24px;
+        line-height: 24px;
+        text-decoration: underline;
+    }
+}

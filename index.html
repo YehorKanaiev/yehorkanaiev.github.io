@@ -2,37 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Resume</title>
+  <title>Yehor Kanaiev</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
-  <section class="content">
-    <div class="container">
-      <div class="photo">
-        <img src="img/photo.jpg" alt="photo of user" class="photo-of-user">
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__photo-block">
+        <img class="header__photo-of-user" src="img/photo.jpg" alt="photo of user">
       </div>
-      <div class="description">
-        <h2>Yehor Kanaiev</h2>
-        <p class="profession">front-end developer</p>
-        <p>
-          Completed the course "computer science" at <a href="https://programming.org.ua/ua" title="Школа програмування Ш++" target="_blank">sh++</a> school.
-        </p>
-        <p>My hobbies:</p>
-        <ul>
-          <li>books</li>
-          <li>football</li>
-          <li>guitar</li>
-        </ul>
+      <div class="header__content">
+        <div class="header__title">
+          <h1>Yehor Kanaiev</h1>
+          <h2>front-end developer</h2>
+        </div>
+        <div class="header__line"></div>
+        <div class="header__contacts">
+          <a class="header__telegram header__icons" href="https://t.me/Lastgrimm" target="_blank"><img src="img/icons/telegram.svg" alt="telegram-icon"></a>
+          <a class="header__google-plus header__icons" href="mailto:egor15kanaev@gmail.com" title="send a letter" ><img src="img/icons/mail.svg" alt="google-plus-icon"></a>
+          <a class="header__instagram header__icons" href="https://www.instagram.com/yehor_kanaiev/" target="_blank"><img src="img/icons/instagram.svg" alt="instagram-icon"></a>
+        </div>
       </div>
     </div>
-    <address class="footer">
-      <a href="mailto:egor15kanaev@gmail.com" title="send a letter" class="link-to-mail">egor15kanaev@gmail.com</a>
-    </address>
+  </header>
+
+  <section class="portfolio">
+    <div class="portfolio__container container">
+
+      <div class="portfolio__item item">
+        <img class="item__website-image" src="img/websites/Di-Gi_16x9.png" alt="screenshot of Di-Gi website" >
+        <a class="item__title" href="https://yehorkanaiev.github.io/di-gi/" target="_blank">
+          Di Gi - digital agency
+        </a>
+      </div>
+
+
+    </div>
   </section>
+
 </body>
 
 </html>

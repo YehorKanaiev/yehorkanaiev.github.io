@@ -1,112 +1,126 @@
 
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
-    color: #ffffff;
-}
-
-.content {
-    width: 540px;
-    height: 300px;
-    margin: 0 auto;
-    background: url("../img/bg.jpg");
-    background-size: cover;
-}
-
-.container {
-    height: 220px;
+    font-family: 'Oxygen', sans-serif;
     display: flex;
-    border-top: 10px solid #111111;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background: linear-gradient(270deg, rgba(95,69,187,1) 62%, rgba(28,19,59,1) 100%);
+    flex: 0 0 auto;
+}
+
+.header__container {
+    display: flex;
     align-items: center;
+    color: #ffffff;
 }
 
-.photo {
-    margin: 0 20px;
+.header__photo-block {
+    flex: 0 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 30px;
 }
 
-.photo-of-user {
-    display: inline-block;
-    border-radius: 25px;
-    width: 180px;
-    height: 180px;
+.header__photo-of-user {
+    width: 150px;
+    height: 150px;
 }
 
-.description {
-    padding-left: 20px;
+.header__content {
+    flex: 1 1 auto;
+    padding: 25px 0;
 }
 
-.description h2 {
-    font-size: 40px;
+.header__title {
     text-align: center;
-    margin: 0;
+    padding: 0 30px 15px;
 }
 
-.profession {
+.header__title h1 {
+    font-size: 60px;
+}
+
+.header__title h2 {
+    font-size: 30px;
+}
+
+.header__line {
+    height: 2px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #ccc;
+}
+
+.header__contacts {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0 0;
+}
+
+.header__icons  {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid rgba(255,255,255,0);
+    border-radius: 5px;
+}
+
+.header__icons:hover {
+    border-color: #ffffff;
+}
+
+.header__icons img {
+    width: 50px;
+    height: 50px;
+}
+
+/* ==================== portfolio ==================== */
+
+.portfolio {
+    background: linear-gradient(180deg, #f1a32a, rgb(241, 82, 41));
+    flex: 1 0 auto;
+}
+
+.portfolio__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio__item {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 2% 2%;
+}
+
+.item__website-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 3% 3% 0 0;
+    overflow: hidden;
+}
+
+.item__title {
+    display: block;
+    text-align: center;
+    background-color: #f8f5d8;
     font-size: 24px;
-    font-style: italic;
-    text-align: center;
-    margin: 0;
-}
+    line-height: 24px;
+    padding: 5px 0;
 
-.description a {
     text-decoration: none;
+    color: #000000;
 }
 
-.description a:link, .description a:visited {
-    color: #ffffff;
-}
-
-.description a:hover {
-    text-decoration: underline;
-}
-
-.description a:active {
-    color: #ffffff;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type:none;
-}
-
-li {
-    float: left;
-    height: 30px;
-    padding: 10px 10px 0 35px;
-}
-
-li:nth-child(1) {
-    background: url("../img/icons/book.png") left no-repeat;
-    background-size: 30px;
-}
-
-li:nth-child(2) {
-    background: url("../img/icons/ball.png") left no-repeat;
-    background-size: 30px;
-}
-
-li:nth-child(3) {
-    background: url("../img/icons/headphones.png") left no-repeat;
-    background-size: 30px;
-}
-
-address {
-    height: 70px;
-    background-color: rgba(20,20,20,0.9);
-}
-
-.link-to-mail {
-    display: inline-block;
-    margin-left: 320px;
-    margin-top: 30px;
-    color: #ffffff;
-    font-style: italic;
-    text-decoration: none;
-}
-
-.link-to-mail:hover {
+.item__title:hover {
     text-decoration: underline;
 }
